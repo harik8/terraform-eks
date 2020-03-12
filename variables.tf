@@ -21,7 +21,7 @@ variable "public_subnets" {
 
 variable "desired_nodes" {
   type    = number
-  default = 2
+  default = 3
 }
 
 variable "max_nodes" {
@@ -31,7 +31,7 @@ variable "max_nodes" {
 
 variable "min_nodes" {
   type    = number
-  default = 2
+  default = 3
 }
 
 variable "instance_type" {
