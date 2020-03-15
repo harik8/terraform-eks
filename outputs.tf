@@ -17,3 +17,7 @@ output "region" {
   description = "AWS region."
   value       = var.region
 }
+
+output "cluster" {
+  value = var.stage
+}

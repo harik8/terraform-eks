@@ -76,7 +76,7 @@ data "aws_eks_cluster_auth" "cluster" {
 
 resource "aws_iam_role_policy_attachment" "cluster-autoscaler" {
   role       = module.eks.worker_iam_role_name
-  policy_arn = "${aws_iam_policy.cluster_autoscaler.arn}"
+  policy_arn = aws_iam_policy.cluster_autoscaler.arn
 }
 
 # data "helm_repository" "stable" {
